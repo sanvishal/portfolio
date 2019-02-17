@@ -6688,6 +6688,8 @@ body.has-navbar-fixed-bottom {
   display: flex;
   flex-shrink: 0;
   min-height: 3.25rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .navbar-brand a.navbar-item:hover {

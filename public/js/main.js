@@ -26,3 +26,11 @@ body = document.getElementById("main-body");
 window.addEventListener("load", function() {
   animate(body, "fadeInUp");
 });
+
+$(function() {
+  $(".slideshow").responsiveSlides({
+    pause: true,
+    auto: true,
+    pager: true
+  });
+});
