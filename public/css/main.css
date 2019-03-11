@@ -13,9 +13,20 @@ nav {
   /*background-color: #5cdb95 !important;*/
 }
 
-body {
+.loader {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#main-body {
   background-color: #ffffff;
-  background-image: url("../img/bgmaster.png") !important;
+  background-image: url("https://imgur.com/Q1F9Eik.png") !important;
 }
 
 .title {
@@ -57,7 +68,7 @@ a.button:focus {
     display: block !important;
   }
   .navbar-end {
-    logomargin-top: -65px !important;
+    margin-top: -65px !important;
   }
   .intro-cont {
     width: 100% !important;
@@ -93,6 +104,10 @@ a.button:focus {
   display: flex;
 }
 
+.navbar-item.logo:hover {
+  color: #fd4445;
+}
+
 .control {
   font-size: 1rem;
   position: relative;
@@ -101,10 +116,10 @@ a.button:focus {
 
 .section.is-primary {
   background-color: #fd4445;
-  background-image: url("../img/bg.png");
+  background-image: url("https://imgur.com/tLo6yUt.png");
   padding: 5rem 1.5rem;
   height: 700px;
-  border-radius: 10px;
+  width: 100%;
 }
 
 .introduction > h1,
@@ -149,21 +164,21 @@ p.list-title {
 
 .desg-card {
   background-color: #ffffff;
-  background-image: url("../img/desbg.png");
+  background-image: url("https://imgur.com/vzAGLGy.png");
 }
 
 .dev-card {
   background-color: #ffffff;
-  background-image: url("../img/devbg.png");
+  background-image: url("https://imgur.com/nRl8acy.png");
 }
 
 .elec-card {
   background-color: #ffffff;
-  background-image: url("../img/elebg.png");
+  background-image: url("https://imgur.com/Vf1NIyL.png");
 }
 
 .section.skills {
-  margin-top: -22rem;
+  margin-top: -13rem;
   padding-bottom: 1rem;
 }
 
@@ -192,7 +207,7 @@ p.list-title {
       rgba(0, 47, 75, 0.5),
       rgba(220, 66, 37, 0.8)
     ),
-    url("../img/gifs/exop.gif") no-repeat;
+    url("https://imgur.com/KdSqZ7y.gif") no-repeat;
   background-size: cover;
 }
 
@@ -202,7 +217,7 @@ p.list-title {
       rgba(0, 47, 75, 0.5),
       rgba(99, 162, 152, 0.8)
     ),
-    url("../img/gifs/talk.gif");
+    url("https://imgur.com/j54Ueog.gif");
   background-size: cover;
 }
 
@@ -212,7 +227,7 @@ p.list-title {
       rgba(0, 47, 75, 0.5),
       rgba(216, 110, 31, 0.8)
     ),
-    url("../img/gifs/igni.gif");
+    url("https://imgur.com/FWXgi3r.gif");
   background-size: cover;
 }
 
@@ -222,7 +237,7 @@ p.list-title {
       rgba(0, 47, 75, 0.5),
       rgba(0, 219, 222, 0.8)
     ),
-    url("../img/gifs/game.gif");
+    url("https://imgur.com/lwWLgsW.gif");
   background-size: cover;
 }
 
@@ -232,7 +247,7 @@ p.list-title {
       rgba(0, 47, 75, 0.5),
       rgba(0, 219, 222, 0.8)
     ),
-    url("../img/gifs/git2.gif");
+    url("https://imgur.com/5luwvnu.gif");
   background-size: cover;
 }
 
@@ -278,8 +293,15 @@ p.list-title {
     font-weight: 400;
   }
   .section.skills {
-    margin-top: -10rem;
+    margin-top: -7rem;
     padding-bottom: 1rem;
+  }
+  .section.is-primary {
+    background-color: #fd4445;
+    background-image: url("https://imgur.com/tLo6yUt.png");
+    padding: 5rem 1.5rem;
+    height: 800px;
+    width: 100%;
   }
 }
 
@@ -334,7 +356,13 @@ p.list-title {
 }
 
 .testimonial {
-  margin-top: -60px;
+  margin-top: -200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .testimonial {
+    margin-top: -15px;
+  }
 }
 
 .slide {
@@ -344,13 +372,14 @@ p.list-title {
   line-height: 1.5em;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 80%;
 }
 
 .slide footer {
   padding-top: 20px;
+  padding-bottom: 10px;
   font-family: "Raleway", sans-serif;
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 700;
   color: #333333;
   opacity: 0.5;
@@ -408,9 +437,9 @@ p.list-title {
   margin-left: auto;
   margin-right: auto;
   border-radius: 45px;
-  -webkit-box-shadow: 0px 0px 42px 5px rgba(0, 0, 0, 0.09);
+  /*-webkit-box-shadow: 0px 0px 42px 5px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0px 0px 42px 5px rgba(0, 0, 0, 0.09);
-  box-shadow: 0px 0px 42px 5px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 0px 42px 5px rgba(0, 0, 0, 0.09);*/
 }
 
 .with-bg > .logo {

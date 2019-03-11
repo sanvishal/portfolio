@@ -1,16 +1,21 @@
 {
-  "name": "portfolio-designer",
+  "name": "tkvishal",
   "version": "1.0.0",
   "description": "Personal Website",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "deploy": "now --public && now alias && now rm %npm_package_name% --safe --yes"
+  },
+  "now": {
+    "name": "tkvishal",
+    "alias": [
+      "tkvishal.now.sh"
+    ]
   },
   "author": "TK Vishal",
   "license": "ISC",
   "dependencies": {
-    "css-purge": "^3.1.7",
-    "express": "^4.16.4",
-    "global": "^4.3.2"
+    "express": "^4.16.4"
   }
 }
